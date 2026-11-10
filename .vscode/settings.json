@@ -1,0 +1,36 @@
+{
+    "latex-workshop.latex.outDir": "%DIR%",
+    "latex-workshop.latex.auxDir": "%DIR%/build", 
+    
+    "editor.formatOnSave": true,
+
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    
+
+
+    "ruff.importStrategy": "fromEnvironment",
+
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.args": [
+        "--strict"
+    ],
+    // LLM ASSISTED (ChatGPT, October 2026). Role: Added these lines to autoformat etc.
+    // LaTeX Workshop settings
+    // Set the default formatter engine (either "latexindent" or "tex-fmt")
+    "latex-workshop.formatting.latex": "latexindent",
+    // Indent wrapped lines instead of extending the line.
+    "[latex]": {
+        "editor.wordWrap": "on",
+        "editor.wrappingIndent": "same",
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.formatOnSave": true
+
+    }
+}

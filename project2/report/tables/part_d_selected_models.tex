@@ -1,0 +1,17 @@
+\begin{table*}[t]
+    \centering
+    \caption{One-standard-error selections for each activation and penalty. Bold rows have the lowest CV MSE among the three activation-specific selections for each penalty. Scores are mean validation MSE and SE.}
+    \label{tab:part_d_selected_models}
+    \begin{tabular}{llllllll}
+        \hline\hline
+        Penalty     & Activation       & Architecture   & Parameters   & $\gamma$      & $\lambda$       & CV MSE           & CV SE             \\
+        \hline
+        \textbf{L1} & \textbf{Sigmoid} & \textbf{(50,)} & \textbf{151} & \textbf{0.05} & \textbf{0.0001} & \textbf{0.01729} & \textbf{0.003953} \\
+        L1          & ReLU             & (50,)          & 151          & 0.05          & 0.0001          & 0.01937          & 0.003305          \\
+        L1          & Leaky ReLU       & (50,)          & 151          & 0.1           & 0.0001          & 0.01866          & 0.003992          \\
+        L2          & Sigmoid          & (50,)          & 151          & 0.05          & 0.0001          & 0.01948          & 0.004988          \\
+        \textbf{L2} & \textbf{ReLU}    & \textbf{(50,)} & \textbf{151} & \textbf{0.01} & \textbf{0.0001} & \textbf{0.01825} & \textbf{0.002843} \\
+        L2          & Leaky ReLU       & (50,)          & 151          & 0.003         & 0.001           & 0.02063          & 0.003652          \\
+        \hline\hline
+    \end{tabular}
+\end{table*}

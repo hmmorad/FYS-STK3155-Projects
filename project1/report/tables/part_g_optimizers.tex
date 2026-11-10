@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Lasso regression with some selected optimizers, compared with Sklearn's Lasso.}
+    \label{tab:lasso-optimizers}
+\begin{tabular}{lrrr}
+\hline\hline
+Optimizer & Iterations & Final cost & $\|\theta-\theta_{\mathrm{sklearn}}\|_2$ \\
+\hline
+GD ($\gamma=0.01$) & 30000 & 0.04504 & 0.0008636 \\
+Momentum ($\gamma=0.01$) & 30000 & 0.04608 & 0.3122 \\
+Adam ($\gamma=0.01$) & 30000 & 0.04511 & 0.004622 \\
+\hline\hline
+\end{tabular}
+\end{table}

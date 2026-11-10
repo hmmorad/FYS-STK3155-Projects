@@ -1,0 +1,17 @@
+\begin{table}[t]
+    \centering
+    \caption{Final regression comparison. All models are fitted on 80 training observations and evaluated on the same 20 held-out test observations after selection. Polynomial CV scores are reused from Project 1. MSE excludes regularization penalties.}
+    \label{tab:part_d_final_comparison}
+    \begin{tabular}{lrrrrr}
+        \hline\hline
+        Model     & Parameters & CV MSE  & CV SE    & Test MSE & Test R2 \\
+        \hline
+        NN (L1)   & 151        & 0.01729 & 0.003953 & 0.01335  & 0.8924  \\
+        NN (L2)   & 151        & 0.01825 & 0.002843 & 0.01661  & 0.8662  \\
+        NN (none) & 151        & 0.01707 & 0.003194 & 0.01187  & 0.9043  \\
+        OLS       & 11         & 0.02351 & 0.00485  & 0.03702  & 0.7017  \\
+        Ridge     & 7          & 0.02895 & 0.004678 & 0.03153  & 0.7459  \\
+        Lasso     & 7          & 0.02704 & 0.004996 & 0.02305  & 0.8143  \\
+        \hline\hline
+    \end{tabular}
+\end{table}

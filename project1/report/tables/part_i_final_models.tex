@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Final OLS, Ridge and Lasso models selected using five-fold cross-validation.}
+    \label{tab:final-models}
+\begin{tabular}{lrlrrrr}
+\hline\hline
+Model & Degree & Lambda & CV MSE & CV SE & Test MSE & Test R2 \\
+\hline
+OLS & 10 & - & 0.0235 & 0.00485 & 0.03702 & 0.7017 \\
+Ridge & 6 & 1.8e-03 & 0.02895 & 0.004678 & 0.03174 & 0.7442 \\
+Lasso & 6 & 1.8e-03 & 0.02704 & 0.004996 & 0.02323 & 0.8128 \\
+\hline\hline
+\end{tabular}
+\end{table}

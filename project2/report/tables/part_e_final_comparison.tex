@@ -1,0 +1,15 @@
+\begin{table*}[t]
+    \centering
+    \caption{MNIST test results after refitting fixed models on all 60,000 training images. Accuracy and macro-F1 are fractions. Times are refit wall times. Selected FFNN: Sigmoid, gamma=0.01, L1=0, L2=1e-05, 27 epochs. MLP: Sigmoid, gamma=0.01, L2=1e-05, 27 epochs.}
+    \label{tab:part_e_final_comparison}
+\begin{tabular}{llrrrr}
+\hline\hline
+Model & Architecture & Params & Time (s) & Test acc. & Macro F1 \\
+\hline
+Our logistic & () & 7850 & 8.045 & 0.9245 & 0.9235 \\
+Our FFNN & (200, 200) & 199210 & 89.7 & 0.9788 & 0.9787 \\
+Scikit-Learn logistic & () & 7850 & 540 & 0.9252 & 0.9242 \\
+Scikit-Learn MLP & (200, 200) & 199210 & 43.87 & 0.9766 & 0.9766 \\
+\hline\hline
+\end{tabular}
+\end{table*}

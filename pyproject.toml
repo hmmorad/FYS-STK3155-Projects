@@ -1,0 +1,41 @@
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[project]
+name = "fys-stk3155-projects"
+version = "0.1.0"
+description = "FYS-STK3155 Projects"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jax>=0.11.2",
+    "jinja2>=3.1.6",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pytest>=9.2.0",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "mypy>=2.3.1",
+    "ruff>=0.16.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["project1/src/project1", "project2/src/project2"]
